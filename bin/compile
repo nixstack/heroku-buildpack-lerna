@@ -10,6 +10,7 @@ ENV_DIR=$3
 
 echo BP_DIR:$BP_DIR
 echo BUILD_DIR:$BUILD_DIR
+ls -l
 
 # Load some convenience functions like head()
 source $BP_DIR/lib/util.sh
