@@ -13,8 +13,8 @@ ls -l $BP_DIR
 
 echo BUILD_DIR:$BUILD_DIR
 ls -l $BUILD_DIR
-echo "BUILD_DIR:"$BUILD_DIR"/node_modules/.bin"
-ls -l $BUILD_DIR/node_modules/.bin
+#echo "BUILD_DIR:"$BUILD_DIR"/node_modules/.bin"
+#ls -l $BUILD_DIR/node_modules/.bin
 
 # Load some convenience functions like head()
 source $BP_DIR/lib/util.sh
@@ -30,7 +30,7 @@ cd $BUILD_DIR
         fi
 
         echo "Found lerna.json, running lerna bootstrap"
-        $BUILD_DIR/node_modules/.bin/lerna bootstarp
+        $BUILD_DIR/node_modules/.bin/lerna bootstrap
         else
             echo "Not lerna repo"
     fi
