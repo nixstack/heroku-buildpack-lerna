@@ -13,6 +13,8 @@ ls -l $BP_DIR
 
 echo BUILD_DIR:$BUILD_DIR
 ls -l $BUILD_DIR
+echo "BUILD_DIR:"$BUILD_DIR"/node_modules/.bin"
+ls -l $BUILD_DIR/node_modules/.bin
 
 # Load some convenience functions like head()
 source $BP_DIR/lib/util.sh
