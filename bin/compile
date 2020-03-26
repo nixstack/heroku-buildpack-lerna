@@ -8,8 +8,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-echo 'BP_DIR $BP_DIR'
-echo 'BUILD_DIR $BUILD_DIR'
+echo BP_DIR:$BP_DIR
+echo BUILD_DIR:$BUILD_DIR
 
 # Load some convenience functions like head()
 source $BP_DIR/lib/util.sh
