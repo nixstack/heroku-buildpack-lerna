@@ -8,6 +8,9 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
+echo 'BP_DIR $BP_DIR'
+echo 'BUILD_DIR $BUILD_DIR'
+
 # Load some convenience functions like head()
 source $BP_DIR/lib/util.sh
 
@@ -22,7 +25,7 @@ cd $BUILD_DIR
         fi
 
         echo "Found lerna.json, running lerna bootstrap"
-        $BUILD_DIR/node_modules/.bin/lerna
+        $BUILD_DIR/node_modules/.bin/lerna bootstarp
         else
             echo "Not lerna repo"
     fi
